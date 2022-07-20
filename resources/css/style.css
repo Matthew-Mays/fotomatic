@@ -51,6 +51,9 @@ header .content {
 
 header .logo {
   flex: 1;
+  color: #4a4a4a;
+  font-size: 1.5rem;
+  font-family: 'Roboto Mono';
 }
 
 header nav ul {
@@ -59,6 +62,7 @@ header nav ul {
 
 nav li {
   padding-left: 3.5rem;
+  line-height: 1.6;
 }
 
 nav a {
@@ -117,13 +121,15 @@ header .mobile {
   justify-content: flex-start;
   align-items: flex-start;
   height: 43.5rem;
+  background-image: url(../images/banner-landingpage.jpg);
 }
 
 #sign-up-cta {
-  padding: 0 5rem 2.5rem 5rem;
-  border: solid 1px #979797;
+  padding: 0 5rem 3.5rem 5rem;
+  border: 1px solid #979797;
   border-radius: 4px;
-  background-color: #9dc20b;
+  background-color: #9dc20a;
+  margin: 10.625rem 6.25rem;
 }
 
 #sign-up-cta .content {
@@ -143,6 +149,10 @@ header .mobile {
   font-size: 2.25rem;
 }
 
+#sign-up-cta span {
+  font-size: 1.25rem;
+  line-height: 1.4;
+}
 #sign-up-cta span strong {
   font-weight: bold;
 }
@@ -154,11 +164,16 @@ header .mobile {
 #sign-up-cta .striking {
   font-family: "Rubik", sans-serif;
   padding-bottom: .75rem;
+  color: white;
+  font-size: 3.125rem;
 }
 
 #sign-up-cta .button {
+  font-weight: 500;
   margin-top: 1.625rem;
   padding: 1.25rem 7.25rem;
+  font-size: 1.25rem;
+  line-height: 1.4;
 }
 
 @media only screen and (max-width: 760px) {
