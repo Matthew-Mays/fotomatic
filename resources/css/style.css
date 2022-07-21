@@ -234,15 +234,14 @@ header .mobile {
 #features-section {
   display: flex;
   justify-content: space-between;
-  padding: 4rem 5%;
+  padding: 4rem 5% 2.875rem 5%;
   background-color: #f3f3f3;
 }
 
 .feature {
   flex: 1;
   padding: 2rem;
-  margin: 0px 1.25rem;
-  height: 35.6875rem;
+  margin: 0px 1.125rem;
   background-color: white;
 }
 
@@ -250,8 +249,12 @@ header .mobile {
   width: 90%;
   height: 65%;
   margin: 0 auto;
+  padding-bottom: 2.5rem;
 }
 
+.feature .content{
+  line-height: 1.2;
+}
 .feature h2 {
   padding-bottom: .5rem;
   font-size: 2.25rem;
@@ -261,7 +264,6 @@ header .mobile {
 
 .feature h3 {
   font-size: 1rem;
-  line-height: 1.2;
   font-weight: 300;
   color: #4a4a4a;
 }
@@ -305,18 +307,20 @@ header .mobile {
 
 #filters-section .content h2 {
   font-size: 2.25rem;
-  font-weight: bold;
+  opacity: 100%;
+  font-weight: 700;
   color: white;
 }
 
 #filters-section .content h3 {
-  font-size: 1rem;
-  line-height: 1.4;
-  font-weight: 300;
-  color: white;
+    font-size: 1rem;
+    color: white;
+    font-weight: 300;
+    line-height: 1.4;
 }
 
 #filters-section .images-container {
+  display: flex;
   max-width: 100%;
   padding: 0 1%;
 }
@@ -357,11 +361,11 @@ header .mobile {
   background-color: #f3f3f3;
 }
 
-#quotes-section content {
+#quotes-section .content {
   padding: 5rem 0;
 }
 
-#quotes-section quote {
+#quotes-section .quote {
   padding-right: 1.875rem;
   font-family: "Palatino", serif;
   font-size: 1.875rem;
@@ -370,21 +374,23 @@ header .mobile {
   color: #4a4a4a;
 }
 
-#quotes-section quote-citation {
+#quotes-section .quote-citation {
   height: 1.875rem;
 }
 
 @media only screen and (max-width: 760px) {
-  #quotes-section content {
+  #quotes-section .content {
     padding: 1.875rem .625rem;
+    display: flex;
   }
 
-  #quotes-section quote {
+  #quotes-section .quote {
     font-size: 1.5rem;
     line-height: 1.4;
+    width: 60%;
   }
 
-  #quotes-section quote-citation {
+  #quotes-section .quote-citation {
     display: block;
     padding-top: 1rem;
     margin: auto;
@@ -395,7 +401,7 @@ header .mobile {
 
 footer {
   background-color: #9b9b9b;
-  padding: 1.5rem 2rem;
+  padding: 1.5625rem 2rem;
 }
 
 footer .content {
@@ -408,7 +414,7 @@ footer .copyright {
   flex-grow: 1;
 }
 
-@media only screen and (min-width: 760px) {
+@media only screen and (max-width: 760px) {
   footer .content {
     font-size: .625rem;
   }
